@@ -128,7 +128,7 @@ double calculateBMR(
   }
 }
 
-// الفانكشن دي هنحطها جوه الكلاس أو براه
+ 
 String getStatus(double bmi) {
                    
   if (bmi >= 16 && bmi < 18.5) return 'Underweight';

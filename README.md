@@ -1,5 +1,6 @@
 # task_robotech
-
+![App Screenshot](assets/image.png)
+![App Screenshot](assets/Screenshot 2026-04-10 224325.png)
 A new Flutter project.
 
 ## Getting Started
