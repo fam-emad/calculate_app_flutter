@@ -1,10 +1,9 @@
 # task_robotech
-![App Screenshot](assets/image.png)
-![App Screenshot](assets/Screenshot 2026-04-10 224325.png)
+ 
 A new Flutter project.
 <p align="center">
   <img src="assets/image.png" width="200" style="margin:10px"/>
-  <img src="assets/Screenshot 2026-04-10 224325.png.png" width="200" style="margin:10px"/>
+  <img src="assets/Screenshot 2026-04-10 224325.png" width="200" style="margin:10px"/>
    
 </p>
 ## Getting Started
