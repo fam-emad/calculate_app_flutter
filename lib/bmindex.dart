@@ -17,7 +17,7 @@ class _BmindexState extends State<Bmindex> {
   int numWeight = 0;
   int age = 0;
   int selectedIndex = -1;
-
+ int selectedIndex11 = -1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,18 +99,18 @@ class _BmindexState extends State<Bmindex> {
               iconcolor: AppColors.white,
               iconsize: 110,
               index: 1,
-              selectedIndex: selectedIndex,
+              selectedIndex: selectedIndex11,
 
               onTap: () {
                 setState(() {
-                  selectedIndex = 1;
+                  selectedIndex11 = 1;
                 });
               },
               isslider: true,
               value: value,
               onChanged: (v) {
                 setState(() {
-                  if(selectedIndex==1){
+                  if(selectedIndex11==1){
                   value = v;
                   }
                 });
@@ -129,17 +129,17 @@ class _BmindexState extends State<Bmindex> {
                   colorfont: AppColors.white,
 
                   index: 6,
-                  selectedIndex: selectedIndex,
+                  selectedIndex: selectedIndex11,
                   onMin: () {
                     setState(() {
-                      if (numWeight > 1&& selectedIndex==6) {
+                      if (numWeight > 1&& selectedIndex11==6) {
                         numWeight--;
                       }
                     });
                   },
                   onAdd: () {
                     setState(() {
-                      if ( selectedIndex==6) {
+                      if ( selectedIndex11==6) {
                       
                       numWeight++;
                       }
@@ -147,7 +147,7 @@ class _BmindexState extends State<Bmindex> {
                   },
                   onTap: () {
                     setState(() {
-                      selectedIndex = 6;
+                      selectedIndex11 = 6;
                     });
                   },
                 ),
@@ -161,25 +161,25 @@ class _BmindexState extends State<Bmindex> {
                   colorfont: AppColors.white,
                   onMin: () {
                     setState(() {
-                      if (age > 1&&selectedIndex==5) {
+                      if (age > 1&&selectedIndex11==5) {
                         age--;
                       }
                     });
                   },
                   onAdd: () {
                     setState(() {
-                      if ( selectedIndex==5) {
+                      if ( selectedIndex11==5) {
                       
                       age++;
                       }
                     });
                   },
                   index: 5,
-                  selectedIndex: selectedIndex,
+                  selectedIndex: selectedIndex11,
 
                   onTap: () {
                     setState(() {
-                      selectedIndex = 5;
+                      selectedIndex11 = 5;
                     });
                   },
                 ),
@@ -199,12 +199,12 @@ class _BmindexState extends State<Bmindex> {
               iconcolor: AppColors.white,
               iconsize: 110,
               index: 2,
-              selectedIndex: selectedIndex,
+              selectedIndex: selectedIndex11,
 
               onTap: () {
-                showdialog(context);
+                showdialog(context,value,age,numWeight,selectedIndex);
                 setState(() {});
-                selectedIndex = 2;
+                selectedIndex11 = 2;
               },
               isslider: false,
             ),
